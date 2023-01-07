@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root {
+    --color: #191919;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #F7F7F7;
+    color: var(--color);
+    margin: 25px;
+    min-height: calc(100vh - 50px);
+
+    height: 200vh;
+}
+
+/* -- Global Header -- */
+
+.before {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1000px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border-radius: 3px;
+    border: solid 1px var(--color);
+    padding: 0px 25px;
+    transform: translateX(2px) translateY(2px);
+    transition: 500ms;
+}
+
+.after {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1000px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border-radius: 3px;
+    box-shadow: 5px 5px 0;
+    border: solid 1px var(--color);
+    padding: 0px 25px;
+    transform: translateX(0px) translateY(0px);
+    transition: 500ms;
+}
+
+header a {
+    color: var(--color);
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    user-select: none;
+    transition: 50ms;
+    margin-bottom: -2px;
+    text-decoration: none;
+}
+
+header a:hover {
+    cursor: pointer;
+    color: #0D6EFD;
+    transition: 50ms;
+}
+
+/* Socials */
+
+header .socials {
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    height: max-content;
+    margin-bottom: -1px;
+}
+
+header .socials svg {
+    fill: var(--color);
+    width: 25px;
+    height: 25px;
+    transition: 50ms;
+}
+
+header .socials svg:hover {
+    cursor: pointer;
+    fill: #0D6EFD;
+    transition: 50ms;
+}
